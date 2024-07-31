@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --clr-SoftBlue: 231deg 69% 60%;
+    --clr-SoftRed: 0deg 94% 66%;
+    --clr-GrayishBlue: 229deg 8% 60%;
+    --clr-VeryDarkBlue: 229deg 31% 21%;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  font-size: 1.125rem;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
