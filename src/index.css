@@ -7,15 +7,24 @@
     --clr-SoftBlue: 231deg 69% 60%;
     --clr-SoftRed: 0deg 94% 66%;
     --clr-GrayishBlue: 229deg 8% 60%;
+    --clr-LightGray: 229deg 10% 91%;
     --clr-VeryDarkBlue: 229deg 31% 21%;
+
+    --ff: "Rubik", sans-serif;
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   display: flex;
+  font-family: var(--ff);
   font-size: 1.125rem;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
