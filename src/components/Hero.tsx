@@ -4,7 +4,7 @@ import HeroImg from "./ui/HeroImg"
 
 function Hero() {
   return (
-    <section className="flex flex-col justify-center text-center">
+    <section>
       <div className="flex flex-col">
         <HeroImg />
         <span className="w-5/6 h-[12.5rem] bg-SoftBlue absolute top-[9.275rem] right-0 -z-10 rounded-bl-[7.5rem]"></span>
