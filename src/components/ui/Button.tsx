@@ -27,6 +27,7 @@ const buttonVariants = cva('rounded-md font-medium', {
       nav: "bg-transparent text-white border border-white"
     },
     size: {
+      sm: 'w-1/3 py-4 text-sm',
       md: 'w-1/2 py-4 text-sm',
       lg: 'py-4 text-base',
     }

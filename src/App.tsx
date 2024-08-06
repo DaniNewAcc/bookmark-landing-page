@@ -7,7 +7,6 @@ import Wrapper from "./components/ui/Wrapper"
 
 function App() {
 
-  // make questions component 
   // make form component 
       // validation for email and empty input field 
   // make footer component 

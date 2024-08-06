@@ -1,5 +1,6 @@
 import data from '../data.json';
 import Accordion from './Accordion';
+import Button from './ui/Button';
 import Info from './ui/Info';
 import Wrapper from './ui/Wrapper';
 
@@ -19,6 +20,9 @@ function Questions() {
             />
           );
         })}
+        <Wrapper wrapperElement="div" className="items-center">
+          <Button variant="primary" size="sm">More Info</Button>
+        </Wrapper>
       </Wrapper>
     </section>
   );
