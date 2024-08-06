@@ -1,16 +1,29 @@
+import Extensions from "./components/Extensions"
 import Features from "./components/Features"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
+import Questions from "./components/Questions"
+import Wrapper from "./components/ui/Wrapper"
 
 function App() {
+
+  // make questions component 
+  // make form component 
+      // validation for email and empty input field 
+  // make footer component 
+
+  // make responsive design for all devices 
+
 
   return (
     <>
       <Header />
-      <main className="flex flex-col justify-center gap-40 text-center">
+      <Wrapper wrapperElement="main" className="justify-center gap-40 text-center">
         <Hero />
         <Features />
-      </main>
+        <Extensions />
+        <Questions />
+      </Wrapper>
     </>
   )
 }
