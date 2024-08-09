@@ -58,18 +58,18 @@ function Newsletter() {
   };
 
   return (
-    <Wrapper wrapperElement="section" className="gap-8 py-12 px-8 bg-SoftBlue">
-      <Wrapper wrapperElement="div" className='lg:w-[500px] lg:mx-auto'>
+    <Wrapper wrapperElement="section" className="w-screen gap-8 py-12 px-8 bg-SoftBlue">
+      <Wrapper wrapperElement="div" className='text-center lg:w-[500px] lg:mx-auto'>
         <Info
           titleWrapper="h3"
           title="Stay up-to-date with what we're doing"
-          headingClasses="order-1 text-white lg:text-center"
-          paragraphClasses="text-sm text-white uppercase tracking-[.25em] leading-10 lg:text-center"
+          headingClasses="order-1 text-white"
+          paragraphClasses="text-sm text-white uppercase tracking-[.25em] leading-10"
         >
           35,000+ already joined
         </Info>
       </Wrapper>
-      <form className="flex flex-col gap-4 lg:flex-row lg:w-[500px] lg:mx-auto" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-4 lg:flex-row lg:justify-center lg:w-[500px] lg:mx-auto" onSubmit={handleSubmit}>
         <Wrapper wrapperElement='div'>
           <input
             className={`${errors ? 'border-2 border-SoftRed' : ''} w-full rounded-md py-3 px-6 placeholder:text-base`} 

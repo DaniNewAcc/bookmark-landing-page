@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Header />
-      <Wrapper wrapperElement="main" className="justify-center gap-40 text-center lg:px-16 lg:gap-8">
+      <Wrapper wrapperElement="main" className="w-screen justify-center gap-40 text-center lg:px-16 lg:gap-8">
         <Hero />
         <Features />
         <Extensions />

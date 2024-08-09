@@ -1,18 +1,23 @@
-// import CloseIcon from './ui/CloseIcon';
 import data from '../data.json';
 import Wrapper from './ui/Wrapper';
 import Button from './ui/Button';
 import LogoIcon from './ui/LogoIcon';
+import CloseIcon from './ui/CloseIcon';
 
-function Menu() {
+type MenuProps = {
+  onClick: () => void
+}
+
+function Menu({ onClick }: MenuProps) {
 
   return (
     <div className="w-screen h-[calc(100vh+10%)] bg-VeryDarkBlue bg-opacity-95 fixed left-0 top-0 z-40">
-      <div className="flex items-center justify-between py-8 px-11">
+      <div className="flex items-center justify-between py-8 px-12">
         <div className="flex items-center">
           <LogoIcon circleClasses='fill-white' pathClasses='fill-VeryDarkBlue' />
           <h3 className="text-white uppercase tracking-wide">Bookmark</h3>
         </div>
+        <button onClick={onClick}><CloseIcon /></button>
       </div>
       <Wrapper wrapperElement="div" className="gap-10">
         <Wrapper wrapperElement="ul" className="items-center px-10">

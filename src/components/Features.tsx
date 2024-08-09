@@ -38,10 +38,10 @@ function Features() {
       </Wrapper>
       <Wrapper wrapperElement="div" className="gap-16 lg:flex-row">
         <div className="my-4 flex-1 w-full h-full relative">
-            <img className='block w-full h-full' src={image} alt={`${name} Image`} />
+            <img className='block w-full lg:w-full h-full' src={image} alt={`${name} Image`} />
             <div className='absolute bg-SoftBlue -z-10 top-[20%] right-[30%] w-[1000px] h-[95%] rounded-br-[150px]'></div>
         </div>
-        <Wrapper wrapperElement="div" className='w-1/2 lg:text-start'>
+        <Wrapper wrapperElement="div" className='lg:w-1/2 lg:text-start'>
           <Info
             titleWrapper="h3"
             title={title}
@@ -49,7 +49,9 @@ function Features() {
           >
             {description}
           </Info>
-          <Button variant="primary" size="sm" className='max-md:hidden'>More Info</Button>
+          <div className="max-md:hidden">
+            <Button variant="primary" size="sm">More Info</Button>
+          </div>
         </Wrapper>
       </Wrapper>
     </section>

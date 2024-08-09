@@ -20,7 +20,7 @@ function Questions() {
             />
           );
         })}
-        <Wrapper wrapperElement="div" className="items-center mt-6">
+        <Wrapper wrapperElement="div" className="items-center my-6">
           <Button variant="primary" size="sm">More Info</Button>
         </Wrapper>
       </Wrapper>

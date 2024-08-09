@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import HamburgerIcon from './ui/HamburgerIcon'
 import logoImg from '/images/logo-bookmark.svg'
 import Menu from './Menu';
-import CloseIcon from './ui/CloseIcon';
 import Navbar from './Navbar';
 
 function Header() {
@@ -28,10 +27,11 @@ function Header() {
     <header className='w-screen flex items-center justify-between p-8 lg:px-28'>
         {!isOpen ? <img src={logoImg} alt="Bookmark Logo" /> : null}
         {screenWidth < 1024 ?
-        <div className='absolute z-50 right-11 top-9 md:hidden'>
-          <button onClick={handleClick}>{isOpen ? <CloseIcon /> : <HamburgerIcon />}</button>
-        </div> : <Navbar />}
-        {isOpen ? <Menu /> : null}
+        <div className='absolute z-50 right-8 top-9 md:hidden'>
+          <button onClick={handleClick}>{!isOpen ? <HamburgerIcon /> : null}</button>
+        </div> : null}
+        {isOpen ? <Menu onClick={handleClick} /> : null}
+        {screenWidth >= 1024 ? <Navbar /> : null}
     </header>
   )
 }
