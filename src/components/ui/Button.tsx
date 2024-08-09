@@ -23,13 +23,15 @@ const buttonVariants = cva('rounded-md font-medium', {
     variant: {
       primary: 'bg-SoftBlue text-white',
       secondary: 'bg-LightGray text-VeryDarkBlue shadow-lg',
-      submit: "bg-SoftRed text-white",
-      nav: "bg-transparent text-white border border-white"
+      submit: "bg-SoftRed text-white hover:bg-white hover:text-SoftRed duration-200 lg:w-1/3",
+      menu: "bg-transparent text-white uppercase tracking-widest border border-white",
+      nav: "bg-SoftRed text-white uppercase tracking-widest",
     },
     size: {
-      sm: 'w-1/3 py-4 text-sm',
+      sm: 'w-1/3 py-4 text-sm lg:w-1/5 lg:py-[.875rem]',
       md: 'w-1/2 py-4 text-sm',
-      lg: 'py-4 text-base',
+      lg: 'w-full py-3 text-base lg:px-10 lg:py-[.875rem]',
+      xl: 'px-10 py-[.875rem] text-base'
     }
   },
   defaultVariants: {

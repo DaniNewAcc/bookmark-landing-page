@@ -57,5 +57,31 @@
             "description": "What about other Chromium browsers?",
             "answer": "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
         }
+    ],
+    "items": [
+        {
+            "id": 1,
+            "name": "Features"
+        },
+        {
+            "id": 2,
+            "name": "Pricing"
+        },
+        {
+            "id": 3,
+            "name": "Contact"
+        }
+    ],
+    "logos": [
+        {
+            "id": 1,
+            "icon": "./images/icon-facebook.svg",
+            "name": "Facebook"
+        },
+        {
+            "id": 2,
+            "icon": "./images/icon-twitter.svg",
+            "name": "Twitter"
+        }
     ]
 }

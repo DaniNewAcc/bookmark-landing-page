@@ -6,7 +6,7 @@ type TabElementProps = {
 };
 
 function TabElement({ idx, name, currentFeature, onClick }: TabElementProps) {
-  let tabElementClasses = 'text-base pb-6';
+  let tabElementClasses = 'text-base pb-6 lg:px-8';
 
   if (currentFeature === idx) {
     tabElementClasses += ' border-b-4 border-b-SoftRed text-VeryDarkBlue';
@@ -15,7 +15,7 @@ function TabElement({ idx, name, currentFeature, onClick }: TabElementProps) {
   }
 
   return (
-    <li className="border-y-GrayishBlue py-6 odd:border-y" onClick={onClick}>
+    <li className="max-md:border-y-GrayishBlue py-6 max-md:odd:border-y lg:border-b" onClick={onClick}>
       <a className={tabElementClasses}>{name}</a>
     </li>
   );

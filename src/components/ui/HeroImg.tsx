@@ -3,8 +3,8 @@ function HeroImg() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="w-full h-fit"
-      viewBox="-20 0 700 600"
+      className="w-[150%] relative z-20"
+      viewBox="-40 0 1100 600"
     >
       <defs>
         <filter

@@ -13,7 +13,7 @@ function ExtensionCard({ name, version, image }: ExtensionProps) {
     <Wrapper
       wrapperElement="div"
       key={name}
-      className="shadow-lg p-6 rounded-md"
+      className="shadow-lg p-6 rounded-md lg:first-of-type:mb-16 lg:even:mt-8 lg:even:mb-8 lg:last-of-type:mt-16"
     >
       <Wrapper wrapperElement="div" className="items-center mt-4 mb-8">
         <i className="mb-8">

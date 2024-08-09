@@ -27,4 +27,5 @@ body {
   font-size: 1.125rem;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }

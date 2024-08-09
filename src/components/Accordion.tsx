@@ -21,7 +21,7 @@ function Accordion({ id, description, answer, ...props }: AccordionProps) {
         transition={{
           bounce: 0,
           stiffness: 200,
-          ease: "easeIn",
+          ease: 'easeIn'
         }}
       >
         <p className="text-start text-pretty text-base text-GrayishBlue leading-8 pb-8">
