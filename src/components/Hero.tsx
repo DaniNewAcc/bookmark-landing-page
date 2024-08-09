@@ -1,16 +1,15 @@
 import Button from './ui/Button';
-import HeroImg from './ui/HeroImg';
 import Info from './ui/Info';
 import Wrapper from './ui/Wrapper';
+import heroImage from '/images/illustration-hero.svg'
+
 
 function Hero() {
   return (
     <section className='lg:flex'>
-      <div className="mt-8 lg:order-2 lg:w-2/3 lg:h-[500px]">
-        <HeroImg />
-        {/* <div className="bg-SoftBlue relative z-10 ms-auto -mt-[380px] translate-y-32 w-1/3 h-[145px] lg:h-[200px] lg:-translate-y-28 lg:-me-16"></div>
-        <div className="bg-SoftBlue relative z-10 ms-auto  translate-y-8 w-[80%] h-[140px] rounded-bl-[6rem] lg:-translate-y-28 lg:-me-16 lg:rounded-bl-[9rem]"></div>
-        <div className="bg-SoftBlue relative z-10 ms-auto  translate-y-8 w-[20%] h-[140px] rounded-bl-[6rem] lg:-translate-y-64 lg:-me-16"></div> */}
+      <div className="mt-8 flex-1 relative w-full h-full lg:order-2 ">
+        <img className='block w-full h-full' src={heroImage} alt="" />
+        <div className='absolute top-[10%] left-[30%] bg-SoftBlue h-full w-[1000px] -z-10 rounded-bl-[150px]'></div>        
       </div>
       <Wrapper wrapperElement="div" className="mt-20 gap-6 lg:text-start lg:w-1/2">
         <Info titleWrapper="h1" title="A Simple Bookmark Manager">

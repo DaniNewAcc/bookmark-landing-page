@@ -9,7 +9,6 @@ function Features() {
   const [currentFeature, setCurrentFeature] = useState(0);
 
   const { name, title, image, description } = data.features[currentFeature];
-  const bookmarking = currentFeature === 0;
 
   const handleClick = (index: number) => {
     setCurrentFeature(index);
@@ -38,23 +37,9 @@ function Features() {
         })}
       </Wrapper>
       <Wrapper wrapperElement="div" className="gap-16 lg:flex-row">
-        {/* make component for bg elements */}
-        <div className="my-4 lg:w-2/3">
-          {/* <div
-            className={`bg-SoftBlue relative z-10 -left-10 translate-y-8 w-1/3 lg:-left-[5.5rem] ${
-              bookmarking ? 'h-[110px]' : 'h-[170px]'
-            }`}
-          ></div>
-          <div className="bg-SoftBlue relative z-10 -left-10 lg:-left-[5.5rem] translate-y-8 w-[95%] h-[80px] rounded-br-[6.5rem] lg:w-[75%]"></div> */}
-          {/* <div
-            className={`w-[90%] relative z-20  translate-x-4 lg:w-[70%] ${
-              bookmarking ? '-mt-[190px]' : '-mt-[250px]'
-            }`}
-          > */}
-            <i className=" object-cover">
-              <img src={image} alt={`${name} Image`} />
-            </i>
-          {/* </div> */}
+        <div className="my-4 flex-1 w-full h-full relative">
+            <img className='block w-full h-full' src={image} alt={`${name} Image`} />
+            <div className='absolute bg-SoftBlue -z-10 top-[20%] right-[30%] w-[1000px] h-[95%] rounded-br-[150px]'></div>
         </div>
         <Wrapper wrapperElement="div" className='w-1/2 lg:text-start'>
           <Info
