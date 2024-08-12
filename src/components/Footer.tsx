@@ -1,6 +1,8 @@
 import LogoIcon from './ui/LogoIcon';
 import data from '../data.json';
 import Wrapper from './ui/Wrapper';
+import TwitterIcon from './ui/TwitterIcon';
+import FacebookIcon from './ui/FacebookIcon';
 
 function Footer() {
   return (
@@ -19,7 +21,7 @@ function Footer() {
               return (
                 <li
                   key={item.id}
-                  className="text-GrayishBlue text-sm uppercase tracking-widest"
+                  className="text-GrayishBlue text-sm uppercase tracking-widest cursor-pointer duration-200 hover:text-SoftRed"
                 >
                   {item.name}
                 </li>
@@ -30,8 +32,8 @@ function Footer() {
         <div className="flex items-center justify-center gap-10">
           {data.logos.map(logo => {
             return (
-              <i key={logo.id} className="w-5 object-contain">
-                <img src={logo.icon} alt={`${logo.name} Icon`} />
+              <i key={logo.id} className="w-5 object-contain cursor-pointer duration-200">
+                {logo.name === "Twitter" ? <TwitterIcon /> : <FacebookIcon />}
               </i>
             );
           })}

@@ -16,7 +16,6 @@ function Newsletter() {
   const [data, setData] = useState(INITIAL_DATA);
   const [errors, setErrors] = useState('');
 
-
   function updateFields(fields: FormData) {
     setData(prev => {
       return { ...prev, ...fields };
@@ -58,21 +57,32 @@ function Newsletter() {
   };
 
   return (
-    <Wrapper wrapperElement="section" className="w-screen gap-8 py-12 px-8 bg-SoftBlue">
-      <Wrapper wrapperElement="div" className='text-center lg:w-[500px] lg:mx-auto'>
+    <Wrapper
+      wrapperElement="section"
+      className="w-screen gap-8 py-12 px-8 bg-SoftBlue"
+    >
+      <Wrapper
+        wrapperElement="div"
+        className="text-center lg:w-[440px] lg:mx-auto lg:gap-10"
+      >
         <Info
           titleWrapper="h3"
           title="Stay up-to-date with what we're doing"
-          headingClasses="order-1 text-white"
-          paragraphClasses="text-sm text-white uppercase tracking-[.25em] leading-10"
+          headingClasses="order-1 text-white lg:text-[1.8rem] lg:leading-[2.5rem]"
+          paragraphClasses="text-sm text-white uppercase tracking-[.25em] leading-10 lg:text-xs lg:tracking-[.4575em]"
         >
           35,000+ already joined
         </Info>
       </Wrapper>
-      <form className="flex flex-col gap-4 lg:flex-row lg:justify-center lg:w-[500px] lg:mx-auto" onSubmit={handleSubmit}>
-        <Wrapper wrapperElement='div'>
+      <form
+        className="flex flex-col gap-4 lg:flex-row lg:justify-center lg:w-[500px] lg:mx-auto"
+        onSubmit={handleSubmit}
+      >
+        <Wrapper wrapperElement="div">
           <input
-            className={`${errors ? 'border-2 border-SoftRed' : ''} w-full rounded-md py-3 px-6 placeholder:text-base`} 
+            className={`${
+              errors ? 'border-2 border-SoftRed' : ''
+            } w-full rounded-md py-[.875rem] px-6 placeholder:text-base`}
             type="text"
             placeholder="Enter your email address"
             value={data.emailAddress}
@@ -80,7 +90,7 @@ function Newsletter() {
           />
           {errors ? <Error errorMsg={errors} /> : null}
         </Wrapper>
-        <Button type="submit" variant="submit" size="lg">
+        <Button type="submit" variant="submit" size="md">
           Contact Us
         </Button>
       </form>

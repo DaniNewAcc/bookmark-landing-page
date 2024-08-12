@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import HamburgerIcon from './ui/HamburgerIcon'
 import logoImg from '/images/logo-bookmark.svg'
 import Menu from './Menu';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,7 @@ function Header() {
           <button onClick={handleClick}>{!isOpen ? <HamburgerIcon /> : null}</button>
         </div> : null}
         {isOpen ? <Menu onClick={handleClick} /> : null}
-        {screenWidth >= 1024 ? <Navbar /> : null}
+        {/* {screenWidth >= 1024 ? <Navbar /> : null} */}
     </header>
   )
 }

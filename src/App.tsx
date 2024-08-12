@@ -9,13 +9,6 @@ import Wrapper from "./components/ui/Wrapper"
 
 function App() {
 
-  // make form component 
-      // validation for email and empty input field 
-  // make footer component 
-
-  // make responsive design for all devices 
-
-
   return (
     <>
       <Header />

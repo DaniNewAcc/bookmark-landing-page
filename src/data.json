@@ -75,12 +75,10 @@
     "logos": [
         {
             "id": 1,
-            "icon": "./images/icon-facebook.svg",
             "name": "Facebook"
         },
         {
             "id": 2,
-            "icon": "./images/icon-twitter.svg",
             "name": "Twitter"
         }
     ]

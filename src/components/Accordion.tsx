@@ -51,7 +51,7 @@ function Accordion({ id, description, answer, ...props }: AccordionProps) {
         className="flex items-center justify-between"
         onClick={handleSelect}
       >
-        <p className="text-base text-VeryDarkBlue">{description}</p>
+        <p className="text-base text-VeryDarkBlue cursor-pointer duration-200 hover:text-SoftRed">{description}</p>
         <ArrowBtn className={arrowBtnClasses} />
       </div>
       <AnimatePresence>{answerContent}</AnimatePresence>

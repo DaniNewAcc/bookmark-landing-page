@@ -3,6 +3,8 @@ import Wrapper from './ui/Wrapper';
 import Button from './ui/Button';
 import LogoIcon from './ui/LogoIcon';
 import CloseIcon from './ui/CloseIcon';
+import TwitterIcon from './ui/TwitterIcon';
+import FacebookIcon from './ui/FacebookIcon';
 
 type MenuProps = {
   onClick: () => void
@@ -25,7 +27,7 @@ function Menu({ onClick }: MenuProps) {
             return (
               <li
                 key={item.id}
-                className="w-full py-4 text-white text-center text-base uppercase tracking-widest odd:border-y odd:border-y-GrayishBlue last-of-type:mb-6"
+                className="w-full py-4 text-white text-center text-base uppercase tracking-widest cursor-pointer odd:border-y odd:border-y-GrayishBlue last-of-type:mb-6"
               >
                 {item.name}
               </li>
@@ -39,7 +41,7 @@ function Menu({ onClick }: MenuProps) {
           {data.logos.map(logo => {
             return (
               <i key={logo.id} className="w-5 object-contain">
-                <img src={logo.icon} alt={`${logo.name} Icon`} />
+                {logo.name === "Twitter" ? <TwitterIcon /> : <FacebookIcon />}
               </i>
             );
           })}

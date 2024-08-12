@@ -10,7 +10,7 @@ function Navbar() {
           return (
             <li
               key={item.id}
-              className="w-full py-4 text-VeryDarkBlue text-center uppercase text-base tracking-widest"
+              className="w-full py-4 text-VeryDarkBlue text-center uppercase text-base tracking-widest cursor-pointer duration-200 hover:text-SoftRed"
             >
               {item.name}
             </li>
