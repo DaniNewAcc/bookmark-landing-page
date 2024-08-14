@@ -62,7 +62,7 @@ function Newsletter() {
   return (
     <Wrapper
       wrapperElement="section"
-      className="w-screen gap-8 py-12 px-8 bg-SoftBlue"
+      className="w-screen gap-8 py-12 px-8 bg-SoftBlue max-md:mt-32"
     >
       <Wrapper
         wrapperElement="div"

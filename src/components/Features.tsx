@@ -49,7 +49,7 @@ function Features() {
           <Info
             titleWrapper="h3"
             title={title}
-            headingClasses='text-3xl'
+            headingClasses='lg:text-3xl'
             paragraphClasses="px-4 text-sm leading-6 lg:px-0 lg:mb-4 lg:text-balance"
           >
             {description}

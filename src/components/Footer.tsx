@@ -20,7 +20,7 @@ function Footer() {
           >
             {data.items.map(item => {
               return (
-                <ListItem key={item.id} className="text-GrayishBlue text-sm">
+                <ListItem key={item.id} className="text-LightGray text-sm">
                   {item.name}
                 </ListItem>
               );

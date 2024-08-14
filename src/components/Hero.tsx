@@ -12,7 +12,7 @@ function Hero() {
           src={heroImage}
           alt="Hero Image"
         />
-        <div className="bg-SoftBlue absolute -z-10 w-[300px] h-[90%] top-[17%] left-[20%] rounded-bl-[150px] lg:w-[520px] lg:h-[70%] lg:top-[35%] lg:left-[30%]"></div>
+        <div className="bg-SoftBlue absolute -z-10 w-[300px] h-[85%] top-[20%] left-[20%] rounded-bl-[110px] sm:w-[350px] md:w-[615px] lg:w-[450px] xl:w-[520px] xl:h-[70%] xl:top-[35%] xl:left-[30%] xl:rounded-bl-[150px]"></div>
       </div>
       <Wrapper
         wrapperElement="div"
@@ -22,7 +22,7 @@ function Hero() {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </Info>
-        <div className="flex gap-4 justify-center mt-8 mx-7 lg:w-2/3 lg:mt-0">
+        <div className="flex gap-4 justify-center mt-4 mx-7 lg:w-2/3 lg:mt-0">
           <Button variant="primary" size="md">
             Get it on Chrome
           </Button>
