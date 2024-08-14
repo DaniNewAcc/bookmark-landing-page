@@ -25,7 +25,7 @@ function Header() {
   };
 
   return (
-    <header className="w-screen flex items-center justify-between p-8 lg:px-28">
+    <header className="w-screen flex items-center justify-between p-8 lg:px-32">
       {!isOpen ? <img src={logoImg} alt="Bookmark Logo" /> : null}
       {screenWidth < 1024 ? (
         <div className="absolute z-50 right-8 top-9 md:hidden">
