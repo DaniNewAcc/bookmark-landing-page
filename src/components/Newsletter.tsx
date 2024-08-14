@@ -62,7 +62,7 @@ function Newsletter() {
   return (
     <Wrapper
       wrapperElement="section"
-      className="w-screen gap-8 py-12 px-8 bg-SoftBlue max-md:mt-32"
+      className="gap-8 py-12 px-8 bg-SoftBlue max-md:mt-32"
     >
       <Wrapper
         wrapperElement="div"
@@ -87,6 +87,7 @@ function Newsletter() {
               errors ? 'border-2 border-SoftRed' : ''
             } w-full rounded-md py-[.875rem] px-6 placeholder:text-base`}
             type="text"
+            name='email'
             placeholder="Enter your email address"
             value={data.emailAddress}
             onChange={handleChange}

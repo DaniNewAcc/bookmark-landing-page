@@ -10,7 +10,6 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -27,12 +26,22 @@ Users should be able to:
 
 ### Screenshots
 
-![]()
+![](./screenshots/desktop-design-1.PNG)
+![](./screenshots/desktop-design-2.PNG)
+![](./screenshots/desktop-design-3.PNG)
+![](./screenshots/desktop-design-4.PNG)
+![](./screenshots/desktop-design-5.PNG)
+![](./screenshots/mobile-design-1.PNG)
+![](./screenshots/mobile-design-2.PNG)
+![](./screenshots/mobile-design-3.PNG)
+![](./screenshots/mobile-design-4.PNG)
+![](./screenshots/mobile-design-5.PNG)
+![](./screenshots/mobile-design-6.PNG)
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://github.com/DaniNewAcc/bookmark-landing-page](https://github.com/DaniNewAcc/bookmark-landing-page)
+- Live Site URL: [https://daninewacc.github.io/bookmark-landing-page/](https://daninewacc.github.io/bookmark-landing-page/)
 
 ## My process
 
@@ -41,11 +50,14 @@ Users should be able to:
 - Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties
+- TailwindCSS
+- Tailwind Merge
+- CLSX
+- Class Variance Authority
+- Framer Motion
+- Typescript 
 - [React](https://reactjs.org/) - JS library
-
-### Useful resources
-
-- []()
+- [Vite](https://vitejs.dev/)
 
 ## Author
 

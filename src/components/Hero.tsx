@@ -12,7 +12,7 @@ function Hero() {
           src={heroImage}
           alt="Hero Image"
         />
-        <div className="bg-SoftBlue absolute -z-10 w-[300px] h-[85%] top-[20%] left-[20%] rounded-bl-[110px] sm:w-[350px] md:w-[615px] lg:w-[450px] xl:w-[520px] xl:h-[70%] xl:top-[35%] xl:left-[30%] xl:rounded-bl-[150px]"></div>
+        <div className="bg-SoftBlue absolute -z-10 w-[300px] h-[85%] top-[20%] left-[20%] rounded-bl-[110px] sm:w-[350px] md:w-[615px] lg:w-[450px] mi: xl:w-[520px] xl:h-[70%] xl:top-[35%] xl:left-[30%] xl:rounded-bl-[150px] 2xl:w-[1000px]"></div>
       </div>
       <Wrapper
         wrapperElement="div"
