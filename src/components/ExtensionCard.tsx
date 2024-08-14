@@ -22,7 +22,7 @@ function ExtensionCard({ name, version, image }: ExtensionProps) {
         <Info
           titleWrapper="h3"
           title={`Add to ${name}`}
-          headingClasses="text-xl"
+          headingClasses="text-xl lg:text-2xl"
           paragraphClasses="text-sm font-medium mt-2 mb-8"
         >
           Minimum version {version}

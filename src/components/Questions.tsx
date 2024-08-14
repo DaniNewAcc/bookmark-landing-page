@@ -6,8 +6,8 @@ import Wrapper from './ui/Wrapper';
 
 function Questions() {
   return (
-    <section className="px-6 lg:w-[500px] lg:mx-auto lg:my-16">
-      <Info titleWrapper="h2" title="Frequently Asked Questions">
+    <section className="px-6 lg:w-[550px] lg:mx-auto lg:my-16">
+      <Info titleWrapper="h2" title="Frequently Asked Questions" headingClasses='lg:text-3xl'>
         Here are some of our FAQs. If you have any other questions you'd like
         answered please feel free to email us.
       </Info>

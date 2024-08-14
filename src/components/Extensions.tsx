@@ -6,8 +6,8 @@ import Wrapper from './ui/Wrapper';
 function Extensions() {
   return (
     <section className="px-6 mt-24">
-      <Wrapper wrapperElement='div' className='lg:w-[500px] lg:mx-auto'>
-        <Info titleWrapper="h2" title="Download the extension">
+      <Wrapper wrapperElement='div' className='lg:w-[550px] lg:mx-auto'>
+        <Info titleWrapper="h2" title="Download the extension" headingClasses='lg:text-3xl'>
           We've got more browsers in the pipeline. Please do let us know if you've
           got a favourite you'd like us to prioritize.
         </Info>

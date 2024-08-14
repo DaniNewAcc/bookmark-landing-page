@@ -20,8 +20,8 @@ function Features() {
 
   return (
     <section className="px-6">
-      <Wrapper wrapperElement='div' className='lg:mx-auto lg:w-[500px]'>
-        <Info titleWrapper="h2" title="Features">
+      <Wrapper wrapperElement='div' className='lg:mx-auto lg:w-[550px]'>
+        <Info titleWrapper="h2" title="Features" headingClasses='lg:text-3xl'>
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
@@ -42,19 +42,20 @@ function Features() {
       </Wrapper>
       <Wrapper wrapperElement="div" className="gap-16 lg:flex-row">
         <div className="my-4 flex-1 w-full h-full relative">
-            <img className='block w-full h-full' src={image} alt={`${name} Image`} />
-            <div className={`${bookmarking ? 'right-0' : 'right-[30%]'} absolute bg-SoftBlue -z-10 top-[20%]  w-[1000px] h-[95%] rounded-br-[150px]`}></div>
+            <img className='block w-full h-full lg:w-[75%] lg:ms-auto' src={image} alt={`${name} Image`} />
+            <div className={`${bookmarking ? 'right-0' : 'right-[30%]'} absolute bg-SoftBlue -z-10 top-[20%] w-[1000px] h-[95%] rounded-br-[150px]`}></div>
         </div>
-        <Wrapper wrapperElement="div" className='lg:w-1/2 lg:text-start'>
+        <Wrapper wrapperElement="div" className={`${bookmarking ? 'lg:mt-16' : 'lg:mt-20'} lg:w-1/2 lg:text-start`}>
           <Info
             titleWrapper="h3"
             title={title}
+            headingClasses='text-3xl'
             paragraphClasses="px-4 text-sm leading-6 lg:px-0 lg:mb-4 lg:text-balance"
           >
             {description}
           </Info>
           <div className="max-md:hidden">
-            <Button variant="primary" size="sm">More Info</Button>
+            <Button variant="primary" size="xs">More Info</Button>
           </div>
         </Wrapper>
       </Wrapper>

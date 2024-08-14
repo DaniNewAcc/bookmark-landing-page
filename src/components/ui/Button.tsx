@@ -28,7 +28,8 @@ const buttonVariants = cva('rounded-md font-medium', {
       nav: "bg-SoftRed border-2 border-SoftRed text-white uppercase tracking-widest duration-200 hover:text-SoftRed hover:bg-white",
     },
     size: {
-      sm: 'w-1/3 py-4 text-sm lg:w-1/5 lg:py-[.875rem]',
+      xs: 'w-1/3 py-4 text-sm lg:w-1/5 lg:py-[.875rem]',
+      sm: 'w-1/3 py-4 text-sm lg:w-1/4 lg:py-[.875rem]',
       md: 'w-1/2 py-4 text-sm',
       lg: 'w-full py-3 text-base lg:px-10 lg:py-[.875rem]',
       xl: 'px-10 py-[.875rem] text-base'
