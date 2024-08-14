@@ -7,7 +7,7 @@ import ListItem from './ListItem';
 
 function Footer() {
   return (
-    <footer className="bg-VeryDarkBlue py-10 space-y-8 px-28">
+    <footer className="bg-VeryDarkBlue py-10 space-y-8 px-32">
       <Wrapper wrapperElement='div' className="gap-6 justify-center items-center lg:flex-row lg:justify-between">
         <Wrapper wrapperElement='div' className="gap-6 items-center lg:flex-row">
           <div className="flex items-center">
@@ -16,7 +16,7 @@ function Footer() {
           </div>
           <Wrapper
             wrapperElement="ul"
-            className="items-center gap-6 lg:flex-row lg:justify-between lg:ms-12"
+            className="items-center gap-6 lg:flex-row lg:justify-between lg:gap-12 lg:ms-12"
           >
             {data.items.map(item => {
               return (
