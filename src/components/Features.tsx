@@ -40,10 +40,10 @@ function Features() {
           );
         })}
       </Wrapper>
-      <Wrapper wrapperElement="div" className="gap-16 lg:flex-row">
+      <Wrapper wrapperElement="div" className="gap-16 lg:flex-row lg:gap-28">
         <div className="my-4 flex-1 w-full h-full relative">
-            <img className='block w-full h-full lg:w-[75%] lg:ms-auto' src={image} alt={`${name} Image`} />
-            <div className={`${bookmarking ? 'right-0' : 'right-[30%]'} absolute bg-SoftBlue -z-10 top-[20%] w-[1000px] h-[95%] rounded-br-[150px]`}></div>
+            <img className='block w-full h-full lg:w-[90%] lg:ms-auto' src={image} alt={`${name} Image`} />
+            <div className={`${bookmarking ? 'right-0 lg:h-full lg:right-[15%]' : 'lg:h-[90%] right-[30%]'} absolute bg-SoftBlue -z-10 top-[20%] w-[1000px] h-[95%] rounded-br-[150px]`}></div>
         </div>
         <Wrapper wrapperElement="div" className={`${bookmarking ? 'lg:mt-16' : 'lg:mt-20'} lg:w-1/2 lg:text-start`}>
           <Info
