@@ -10,9 +10,13 @@ function Features() {
 
   const { name, title, image, description } = data.features[currentFeature];
 
+  const bookmarking = currentFeature === 0
+
   const handleClick = (index: number) => {
     setCurrentFeature(index);
   };
+
+
 
   return (
     <section className="px-6">
@@ -38,8 +42,8 @@ function Features() {
       </Wrapper>
       <Wrapper wrapperElement="div" className="gap-16 lg:flex-row">
         <div className="my-4 flex-1 w-full h-full relative">
-            <img className='block w-full lg:w-full h-full' src={image} alt={`${name} Image`} />
-            <div className='absolute bg-SoftBlue -z-10 top-[20%] right-[30%] w-[1000px] h-[95%] rounded-br-[150px]'></div>
+            <img className='block w-full h-full' src={image} alt={`${name} Image`} />
+            <div className={`${bookmarking ? 'right-0' : 'right-[30%]'} absolute bg-SoftBlue -z-10 top-[20%]  w-[1000px] h-[95%] rounded-br-[150px]`}></div>
         </div>
         <Wrapper wrapperElement="div" className='lg:w-1/2 lg:text-start'>
           <Info

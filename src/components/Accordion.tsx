@@ -12,6 +12,7 @@ type AccordionProps = {
 function Accordion({ id, description, answer, ...props }: AccordionProps) {
   const [selected, setSelected] = useState<number | null>(null);
 
+  // answer content + animation for transitioning between selected accordion with framer motion library
   const answerContent =
     selected === id ? (
       <motion.div
@@ -36,6 +37,8 @@ function Accordion({ id, description, answer, ...props }: AccordionProps) {
 
   let accordionClasses = 'gap-8 border-b';
   let arrowBtnClasses = 'duration-300';
+
+  // styling for active state 
 
   if (selected !== id) {
     accordionClasses += ' pb-4';

@@ -1,4 +1,5 @@
 import data from '../data.json';
+import ListItem from './ListItem';
 import Button from './ui/Button';
 import Wrapper from './ui/Wrapper';
 
@@ -8,12 +9,12 @@ function Navbar() {
       <Wrapper wrapperElement="ul" className="flex-row items-center gap-12">
         {data.items.map(item => {
           return (
-            <li
+            <ListItem
               key={item.id}
-              className="w-full py-4 text-VeryDarkBlue text-center uppercase text-base tracking-widest cursor-pointer duration-200 hover:text-SoftRed"
+              className="w-full py-4 text-VeryDarkBlue text-center text-base"
             >
               {item.name}
-            </li>
+            </ListItem>
           );
         })}
         <Button variant="nav" size="xl">

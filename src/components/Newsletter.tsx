@@ -16,6 +16,8 @@ function Newsletter() {
   const [data, setData] = useState(INITIAL_DATA);
   const [errors, setErrors] = useState('');
 
+
+  // helper function for updating form fields 
   function updateFields(fields: FormData) {
     setData(prev => {
       return { ...prev, ...fields };
@@ -28,6 +30,7 @@ function Newsletter() {
     updateFields({ emailAddress: value });
   };
 
+  // email validation with regex pattern 
   const validateEmail = (emailAddress: string) => {
     let isEmailValid = true;
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;

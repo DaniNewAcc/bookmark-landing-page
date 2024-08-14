@@ -1,5 +1,3 @@
-// import ArrowIcon from "./ArrowIcon"
-
 type ArrowBtnProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 function ArrowBtn({ className, ...props }: ArrowBtnProps) {
