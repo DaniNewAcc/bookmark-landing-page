@@ -27,17 +27,19 @@ function Menu({ onClick }: MenuProps) {
         </span>
       </div>
       <Wrapper wrapperElement="div" className="gap-10">
-        <Wrapper wrapperElement="ul" className="items-center px-10">
-          {data.items.map(item => {
-            return (
-              <ListItem
-                key={item.id}
-                className="w-full py-4 text-white text-center text-base odd:border-y odd:border-y-GrayishBlue last-of-type:mb-6"
-              >
-                {item.name}
-              </ListItem>
-            );
-          })}
+        <Wrapper wrapperElement="div" className='px-10'>
+          <Wrapper wrapperElement='ul' className="items-center">
+            {data.items.map(item => {
+              return (
+                <ListItem
+                  key={item.id}
+                  className="w-full py-4 text-white text-center text-base odd:border-y odd:border-y-GrayishBlue last-of-type:mb-6"
+                >
+                  {item.name}
+                </ListItem>
+              );
+            })}
+          </Wrapper>
           <Button variant="menu" size="lg">
             Login
           </Button>
