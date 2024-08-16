@@ -22,9 +22,9 @@ function Menu({ onClick }: MenuProps) {
           />
           <h3 className="text-white uppercase tracking-wide">Bookmark</h3>
         </div>
-        <button onClick={onClick}>
+        <span onClick={onClick}>
           <CloseIcon />
-        </button>
+        </span>
       </div>
       <Wrapper wrapperElement="div" className="gap-10">
         <Wrapper wrapperElement="ul" className="items-center px-10">

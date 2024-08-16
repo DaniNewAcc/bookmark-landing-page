@@ -6,12 +6,12 @@ import Wrapper from './ui/Wrapper';
 function Navbar() {
   return (
     <nav>
-      <Wrapper wrapperElement="ul" className="flex-row items-center gap-12">
+      <Wrapper wrapperElement="ul" className="flex-row items-center me-5 gap-8">
         {data.items.map(item => {
           return (
             <ListItem
               key={item.id}
-              className="w-full py-4 text-VeryDarkBlue text-center text-base"
+              className="w-full py-4 text-VeryDarkBlue text-center text-sm"
             >
               {item.name}
             </ListItem>

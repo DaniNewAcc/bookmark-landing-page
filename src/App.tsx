@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <Wrapper wrapperElement="main" className="w-screen justify-center gap-32 text-center lg:mt-12 lg:px-16 lg:gap-24">
+      <Wrapper wrapperElement="main" className="w-screen justify-center gap-32 text-center lg:mt-12 lg:px-24 lg:gap-20">
         <Hero />
         <Features />
         <Extensions />

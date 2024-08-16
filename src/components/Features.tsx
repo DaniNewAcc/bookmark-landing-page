@@ -27,7 +27,7 @@ function Features() {
           them on the go.
         </Info>
       </Wrapper>
-      <Wrapper wrapperElement="ul" className="my-16 lg:flex-row lg:justify-center lg:gap-24 lg:border-b lg:border-GrayishBlue lg:w-fit lg:mx-auto">
+      <Wrapper wrapperElement="ul" className="my-16 lg:flex-row lg:justify-center lg:border-b lg:border-GrayishBlue lg:w-fit lg:mx-auto lg:gap-10">
         {data.features.map((feature, index) => {
           return (
             <TabElement
@@ -42,15 +42,15 @@ function Features() {
       </Wrapper>
       <Wrapper wrapperElement="div" className="gap-16 lg:flex-row lg:gap-28">
         <div className="my-4 flex-1 w-full h-full relative">
-            <img className='block w-full h-full lg:w-[90%] lg:ms-auto' src={image} alt={`${name} Image`} />
+            <img className='block w-full h-full lg:w-[90% lg:ms-auto' src={image} alt={`${name} Image`} />
             <div className={`${bookmarking ? 'right-0 lg:h-full lg:right-[15%]' : 'lg:h-[90%] right-[30%]'} absolute bg-SoftBlue -z-10 top-[20%] w-[1000px] h-[95%] rounded-br-[150px]`}></div>
         </div>
-        <Wrapper wrapperElement="div" className={`${bookmarking ? 'lg:mt-16' : 'lg:mt-20'} lg:w-1/2 lg:text-start`}>
+        <Wrapper wrapperElement="div" className={`${bookmarking ? 'lg:mt-[4.5rem]' : 'lg:mt-20'} lg:w-1/2 lg:text-start`}>
           <Info
             titleWrapper="h3"
             title={title}
             headingClasses='lg:text-3xl'
-            paragraphClasses="px-4 text-sm leading-6 lg:px-0 lg:mb-4 lg:text-balance"
+            paragraphClasses="px-4 text-sm leading-6 lg:px-0 lg:mb-8 lg:text-balance"
           >
             {description}
           </Info>

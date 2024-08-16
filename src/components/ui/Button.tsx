@@ -30,9 +30,9 @@ const buttonVariants = cva('rounded-md font-medium', {
     size: {
       xs: 'w-1/3 py-4 text-sm lg:w-1/5 lg:py-[.875rem]',
       sm: 'w-1/3 py-4 text-sm lg:w-1/4 lg:py-[.875rem]',
-      md: 'w-1/2 py-4 text-sm',
+      md: 'w-1/2 py-3 text-base',
       lg: 'w-full py-3 text-base lg:px-10 lg:py-[.875rem]',
-      xl: 'px-10 py-[.875rem] text-base'
+      xl: 'px-9 py-[.625rem] text-base'
     }
   },
   defaultVariants: {

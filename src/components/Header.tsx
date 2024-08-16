@@ -25,14 +25,14 @@ function Header() {
   };
 
   return (
-    <header className="w-screen flex items-center justify-between p-8 lg:px-32">
+    <header className="w-screen flex items-center justify-between p-8 lg:py-10 lg:px-36">
       {!isOpen ? <img src={logoImg} alt="Bookmark Logo" /> : null}
       {screenWidth < 1024 ? (
         <div className="absolute z-50 right-8 top-9 md:hidden">
           {!isOpen ? (
-            <button onClick={handleClick}>
+            <span onClick={handleClick}>
               <HamburgerIcon />
-            </button>
+            </span>
           ) : (
             <Menu onClick={handleClick} />
           )}
