@@ -36,7 +36,7 @@ function Accordion({ id, description, answer, ...props }: AccordionProps) {
   };
 
   let accordionClasses = 'gap-8 border-b';
-  let arrowBtnClasses = 'duration-300';
+  let arrowBtnClasses = 'cursor-pointer duration-300 hover:stroke-SoftRed';
 
   // styling for active state 
 
